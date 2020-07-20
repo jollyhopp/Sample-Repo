@@ -2,7 +2,9 @@ import math
 import os
 import sys
 
+import matplotlib
+import requests
 
-print(sys.version)
-print(sys.executable)
-print("Hello world!")
+r = requests.get("https://coreyms.com")
+print(r.status_code)
+print(r.ok)
